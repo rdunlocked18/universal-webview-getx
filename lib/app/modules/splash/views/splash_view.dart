@@ -15,7 +15,7 @@ class SplashView extends GetView<SplashController> {
         backgroundColor: Colors.transparent,
         centerTitle: true,
         title: Text(
-          "Ver : ${Constants.appVersion}",
+          'Ver : ${Constants.appVersion}',
           style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                 fontWeight: FontWeight.normal,
                 fontSize: 14,

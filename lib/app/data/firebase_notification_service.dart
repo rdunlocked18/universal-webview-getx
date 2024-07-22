@@ -31,7 +31,7 @@ class FirebaseNotificationService {
   }
 
   Future<void> _handleForegroundMessage(RemoteMessage message) async {
-    debugPrint("Handling a foreground message: ${message.messageId}");
+    debugPrint('Handling a foreground message: ${message.messageId}');
     _showNotification(message);
   }
 
@@ -62,6 +62,6 @@ class FirebaseNotificationService {
 
 // This function must be a top-level function
 Future<void> _handleBackgroundMessage(RemoteMessage message) async {
-  debugPrint("Handling a background message: ${message.messageId}");
+  debugPrint('Handling a background message: ${message.messageId}');
   // You can add custom logic here for background message handling
 }

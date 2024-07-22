@@ -22,7 +22,7 @@ class HomeController extends GetxController {
   );
 
   PullToRefreshController? pullToRefreshController;
-  var url = "";
+  var url = '';
   var progress = 0.0.obs;
   final urlController = TextEditingController();
   final RxBool canGoBack = false.obs;
@@ -49,16 +49,6 @@ class HomeController extends GetxController {
               }
             },
           );
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
   }
 
   void updateCanGoBack(bool value) {

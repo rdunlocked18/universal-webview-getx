@@ -1,3 +1,4 @@
+import 'package:universal_webview/app/data/constants.dart';
 import 'package:universal_webview/app/data/firebase_notification_service.dart';
 import 'package:universal_webview/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -18,7 +19,7 @@ void main() async {
 
   runApp(
     GetMaterialApp(
-      title: "Application",
+      title: Constants.appName,
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
     ),
