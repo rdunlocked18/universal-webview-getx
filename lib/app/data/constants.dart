@@ -7,6 +7,8 @@ class Constants {
   static const String appVersion = '1.0.0';
   static const String splashSubTitle = 'Universal Webview';
   static const int splashDurationSeconds = 3;
+  static const String androidPackageName = 'com.example.android';
+  static const String iosAppstoreId = '21321';
 
   // URL Schemes
   static const String whatsappUrlScheme = 'whatsapp';

@@ -29,11 +29,11 @@ class HomeView extends GetView<HomeController> {
           ),
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: controller.onActionItemHomeTap,
               icon: const Icon(Icons.home, color: Colors.white),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: controller.onActionItemShareTapped,
               icon: const Icon(Icons.share, color: Colors.white),
             ),
             PopupMenuButton<int>(
@@ -41,13 +41,38 @@ class HomeView extends GetView<HomeController> {
               onSelected: (item) {},
               color: Colors.white,
               itemBuilder: (context) => [
-                const PopupMenuItem<int>(
+                PopupMenuItem<int>(
                   value: 0,
-                  child: Text('Rate App'),
+                  onTap: controller.openAppStore,
+                  child: const Row(
+                    children: [
+                      Icon(Icons.star_purple500),
+                      SizedBox(width: 10),
+                      Text('Rate App'),
+                    ],
+                  ),
                 ),
-                const PopupMenuItem<int>(
+                PopupMenuItem<int>(
                   value: 1,
-                  child: Text('Refresh'),
+                  onTap: controller.onActionItemRefreshTapped,
+                  child: const Row(
+                    children: [
+                      Icon(Icons.refresh),
+                      SizedBox(width: 10),
+                      Text('Refresh'),
+                    ],
+                  ),
+                ),
+                PopupMenuItem<int>(
+                  value: 2,
+                  onTap: controller.onExitApp,
+                  child: const Row(
+                    children: [
+                      Icon(Icons.exit_to_app),
+                      SizedBox(width: 10),
+                      Text('Exit App'),
+                    ],
+                  ),
                 ),
               ],
             ),
