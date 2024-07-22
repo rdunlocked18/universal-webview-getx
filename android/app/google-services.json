@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "988071215040",
+    "project_id": "flutter-webview-universal",
+    "storage_bucket": "flutter-webview-universal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988071215040:android:b2e579ab0a35297fd65225",
+        "android_client_info": {
+          "package_name": "com.daftarirn.webuld"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLyYkz4QaNf8e3sXkTUBuw4gwtx6TJfYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988071215040:android:295b3dfd8b2c43d5d65225",
+        "android_client_info": {
+          "package_name": "com.example.arthashakti_webview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLyYkz4QaNf8e3sXkTUBuw4gwtx6TJfYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
