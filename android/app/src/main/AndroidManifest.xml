@@ -3,7 +3,7 @@
    <uses-permission android:name="android.permission.INTERNET"/>
    
     <application
-        android:label="arthashakti_webview"
+        android:label="universal_webview"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

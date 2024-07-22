@@ -5,7 +5,7 @@ class Constants {
   static const String appName = 'Universal Webview';
   static const String baseUrl = 'https://www.google.co.in/';
   static const String appVersion = '1.0.0';
-  static const String splashSubTitle = 'MORE IDEAS FOR YOUR NIVESH';
+  static const String splashSubTitle = 'Universal Webview';
   static const int splashDurationSeconds = 3;
 
   // URL Schemes
@@ -31,9 +31,11 @@ class Constants {
   static const String logoImagePath = 'assets/images/logo.png';
 
   // Colors
-  static const Color appThemeColor = Color(0xff0080CE);
+  static const Color primaryColor = Color.fromARGB(255, 206, 52, 0);
+  static const Color secondaryColor = Color.fromARGB(255, 206, 52, 0);
+  static const Color appThemeColor = Color.fromARGB(255, 206, 52, 0);
   static const Color splashVersionNumberColor = Color(0xff5D18EB);
-  static const Color splashSubTitleColor = Color(0xff5D18EB);
+  static const Color splashSubTitleColor = Color.fromARGB(255, 235, 63, 24);
 
   // Notification Config
   static const String notificationIconImage = '@mipmap/ic_launcher';

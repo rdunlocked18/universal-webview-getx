@@ -46,13 +46,16 @@ class SplashView extends GetView<SplashController> {
             Center(
               child: Image.asset(
                 Constants.logoImagePath,
-                height: 300,
-                width: 300,
+                height: 200,
+                width: 200,
               ),
             ),
             const Padding(
               padding: EdgeInsets.only(top: 60.0),
-              child: Center(child: CircularProgressIndicator()),
+              child: Center(
+                  child: CircularProgressIndicator(
+                color: Constants.primaryColor,
+              )),
             ),
           ],
         ),

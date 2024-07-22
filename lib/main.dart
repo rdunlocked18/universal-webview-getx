@@ -19,6 +19,7 @@ void main() async {
 
   runApp(
     GetMaterialApp(
+      color: Constants.appThemeColor,
       title: Constants.appName,
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,

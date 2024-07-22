@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:get/get.dart';
+import 'package:universal_webview/app/data/constants.dart';
 
 class HomeController extends GetxController {
   final GlobalKey webViewKey = GlobalKey();
@@ -72,7 +73,13 @@ class HomeController extends GetxController {
           'Exit App',
           'Press back again to exit',
           snackPosition: SnackPosition.BOTTOM,
-          duration: const Duration(seconds: 2),
+          backgroundColor: Colors.black,
+          colorText: Colors.white,
+          borderRadius: 4,
+          icon: const Icon(
+            Icons.exit_to_app,
+            color: Colors.amber,
+          ),
         );
         return false;
       }
