@@ -40,7 +40,7 @@ class Constants {
   static const Color splashSubTitleColor = Color.fromARGB(255, 235, 63, 24);
 
   // Notification Config
-  static const String notificationIconImage = '@mipmap/ic_launcher';
+  static const String notificationIconImage = 'ic_notify';
   static const String notificationChannelId = 'all_news';
   static const String notificationChannelName = 'All Notifications';
 }

@@ -40,6 +40,7 @@ class FirebaseNotificationService {
         AndroidNotificationDetails(
       Constants.notificationChannelId,
       Constants.notificationChannelName,
+      icon: Constants.notificationIconImage,
       importance: Importance.max,
       priority: Priority.high,
     );
@@ -56,7 +57,8 @@ class FirebaseNotificationService {
   }
 
   Future<String?> getToken() async {
-    return await _firebaseMessaging.getToken();
+    String? token = await _firebaseMessaging.getToken();
+    return token;
   }
 }
 
